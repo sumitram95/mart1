@@ -31,7 +31,7 @@
 }
 
 /* ***************************************************************************************************************************** */
-.cursor-pointer:hover{
+.cursor-pointer:hover {
   background: #def9ec;
 }
 .max-auto {
@@ -124,3 +124,12 @@ a:hover {
 .bg-black {
   background: #1e1e1e;
 }
+/* contact */
+.bg-gradiant {
+  background-image: linear-gradient(#3bb77e,#3bb77d54);
+}
+
+.bg-green-white {
+  background: #d0f0e1;
+}
+/* end contact */
