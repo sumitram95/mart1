@@ -31,9 +31,9 @@
 }
 
 /* ***************************************************************************************************************************** */
-.cursor-pointer:hover {
+/* .cursor-pointer:hover {
   background: #def9ec;
-}
+} */
 .max-auto {
   max-width: 1250px;
   margin-left: auto;
