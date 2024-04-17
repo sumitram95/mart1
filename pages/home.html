@@ -66,7 +66,7 @@
             class="bg-primary px-4 py-3 text-white rounded-md w-full text-start"
             id="sider-open"
           >
-            <i class="fa-solid fa-bars"></i> Browse all categories
+          <i class="fa-solid fa-grid-round-2"></i>Browse all categories
           </button>
         </div>
         <div class="flex gap-7">
@@ -959,65 +959,13 @@
         </div>
       </div>
     </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
-
-    <!-- <script>
-      $(document).ready(function () {
-        // $("#sider-open").click(function () {
-        //   $(".side-bar").toggleClass("hidden");
-        //   $(".dis").toggleClass("justify-end");
-        // });
-
-        var currentIndex = 0;
-        var totalItems = $(".item").length;
-
-        function showItems() {
-          $("#carousel").css(
-            "transform",
-            "translateX(-" + currentIndex * (100 / 3) + "%)"
-          );
-
-          $("#carousel-preview").empty();
-          for (var i = currentIndex; i < currentIndex + 3; i++) {
-            var itemIndex = i % totalItems;
-            var previewItem = $(
-              "<div class='preview-item'>" + (itemIndex + 1) + "</div>"
-            );
-            if (i === currentIndex) {
-              previewItem.addClass("active"); // Add active class to the current item in preview
-            }
-            $("#carousel-preview").append(previewItem);
-          }
-        }
-
-        function updatePreviewActive() {
-          $(".preview-item").removeClass("active");
-          $(".preview-item")
-            .eq(currentIndex % totalItems)
-            .addClass("active");
-        }
-
-        setInterval(function () {
-          currentIndex = (currentIndex + 1) % totalItems;
-          showItems();
-          updatePreviewActive();
-        }, 3000);
-
-        $(".preview-item").on("click", function () {
-          currentIndex = $(this).index();
-          showItems();
-          updatePreviewActive();
-        });
-
-        showItems();
-        updatePreviewActive();
-      });
-    </script> -->
     <script src="../js/carousel.js"></script>
   </body>
 </html>
