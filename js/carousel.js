@@ -18,7 +18,7 @@ $(document).ready(function () {
       "transform",
       "translateX(-" + currentIndex * (100 / 3) + "%)"
     );
-
+    
     $("#carousel-preview").empty();
     for (var i = currentIndex; i < currentIndex + 3; i++) {
       var itemIndex = i % totalItems;
