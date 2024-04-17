@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // product name
   var maxLength = 23;
   $(".product-name").each(function () {
     var text = $(this).text();
@@ -6,8 +7,18 @@ $(document).ready(function () {
     if (text.length > maxLength) {
       text = text.substring(0, maxLength) + "...";
     }
-
     $(this).text(text);
+  });
+
+  // users review
+  var maxLengthReview = 170;
+  $(".user-review").each(function () {
+    var reviewText = $(this).find("p").text();
+    if (reviewText.length > maxLengthReview) {
+      reviewText = reviewText.substring(0, maxLengthReview) + "...";
+      $(this).find("a").removeClass("hidden");
+    }
+    $(this).find("p").text(reviewText);
   });
 
   var currentIndex = 0;
@@ -18,7 +29,7 @@ $(document).ready(function () {
       "transform",
       "translateX(-" + currentIndex * (100 / 3) + "%)"
     );
-    
+
     $("#carousel-preview").empty();
     for (var i = currentIndex; i < currentIndex + 3; i++) {
       var itemIndex = i % totalItems;
@@ -39,7 +50,16 @@ $(document).ready(function () {
       .addClass("active");
   }
 
-  setInterval(function () {
+  $(".item").click(function () {
+    clearInterval(timer);
+    timer = setInterval(function () {
+      currentIndex = (currentIndex + 1) % totalItems;
+      showItems();
+      updatePreviewActive();
+    }, 3000);
+  });
+
+  timer = setInterval(function () {
     currentIndex = (currentIndex + 1) % totalItems;
     showItems();
     updatePreviewActive();
