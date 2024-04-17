@@ -4,10 +4,12 @@ $(document).ready(function () {
   $(".product-name").each(function () {
     var text = $(this).text();
 
+    console.log(text);
+
     if (text.length > maxLength) {
       text = text.substring(0, maxLength) + "...";
+      $(this).text(text);
     }
-    $(this).text(text);
   });
 
   // users review
