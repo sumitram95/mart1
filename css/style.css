@@ -143,3 +143,16 @@ input[id="cb1"] {
 }
 
 /* end register */
+
+/* pick of the day */
+
+.image-lists {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+/* banner */
+

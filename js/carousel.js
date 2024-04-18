@@ -1,4 +1,19 @@
 $(document).ready(function () {
+  // scroll
+  const imageLists = document.querySelector(".image-lists");
+  const slideBtn = $(".slid-btn");
+
+  slideBtn.each((index, button) => {
+    $(button).on("click", () => {
+      const direction = button.id === "prev" ? -1 : 1;
+      const scrollAmount = imageLists.clientWidth * direction;
+      imageLists.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    });
+  });
+
   // product name
   var maxLength = 23;
   $(".product-name").each(function () {
