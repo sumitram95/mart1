@@ -37,10 +37,11 @@ session_start();
             if (password_verify($password, $user['password'])) {
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['user_name'] = $user['user_name'];
+                $_SESSION['full_name'] = $user['first_name'] . ' ' . $user['last_name'];
                 $_SESSION['message'] = "Login successful!";
-                // header("Location: dashboard.php"); // Redirect to a protected page
-    
-                echo "Welcome to dashboard!" . $user['first_name'];
+                header("Location: ../pages/dashboard.php");
+
+                // echo "Welcome to dashboard!" . $user['first_name'];
                 exit();
             } else {
                 $_SESSION['error'] = "Invalid username or password!";
