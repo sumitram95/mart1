@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +17,7 @@
     <title>Trader Register</title>
 
     <link rel="stylesheet" href="../../../css/style.css">
+    <?php include "../../connection.php"; ?>
 </head>
 
 <body class="overflow-x-hidden">
@@ -24,56 +28,90 @@
                     Become one of our Traders
                 </h1>
                 <div class="mt-4">
-                    <form action="">
+                    <?php
+                    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
+
+                        $first_name = $_POST['first_name'];
+                        $last_name = $_POST['last_name'];
+                        $user_name = $_POST['user_name'];
+                        $email = $_POST['email'];
+                        $password = $_POST['password'];
+                        $contact = $_POST['contact'];
+                        $shop_name = $_POST['shop_name'];
+                        $address = $_POST['address'];
+                        $shop_type = $_POST['shop_type'];
+
+                        // Hash the password
+                        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+                        // insert data into db
+                        $insert = "INSERT INTO `traders`(`first_name`, `last_name`, `user_name`,`email`,
+                        `password`,`contact`,`shop_name`,`address`,`shop_type`) VALUES ('$first_name','$last_name','$user_name',
+                        '$email','$hashed_password','$contact','$shop_name','$address','$shop_type')";
+
+                        $query = mysqli_query($con, $insert);
+                        if ($query) {
+                            $_SESSION['message'] = "Registered successfully! Please check your email";
+                            header("Location: sign-in.php");
+                            exit();
+                        } else {
+                            ?>
+                            <script>
+                                alert("Something wrong!");
+                            </script>
+                            <?php
+                        }
+
+                    }
+                    ?>
+                    <form action="" method="post">
                         <div class="mt-3 flex gap-4">
-                            <input type="text" placeholder="First name"
+                            <input type="text" placeholder="First name" name="first_name"
                                 class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
-                            <input type="text" placeholder="Last name"
-                                class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
-                        </div>
-
-                        <div class="mt-1">
-                            <input type="text" placeholder="User name"
+                            <input type="text" placeholder="Last name" name="last_name"
                                 class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
                         </div>
 
                         <div class="mt-1">
-                            <input type="email" placeholder="Email address"
+                            <input type="text" placeholder="User name" name="user_name"
                                 class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
                         </div>
 
                         <div class="mt-1">
-                            <input type="password" placeholder="Password"
+                            <input type="email" placeholder="Email address" name="email"
+                                class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        </div>
+
+                        <div class="mt-1">
+                            <input type="password" placeholder="Password" name="password"
                                 class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
                         </div>
                         <div class="mt-1">
-                            <input type="text" placeholder="Contact"
+                            <input type="text" placeholder="Contact" name="contact"
                                 class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
                         </div>
                         <div class="mt-1">
-                            <input type="text" placeholder="Shop Name"
+                            <input type="text" placeholder="Shop Name" name="shop_name"
                                 class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
                         </div>
                         <div class="mt-1">
-                            <input type="text" placeholder="Address"
+                            <input type="text" placeholder="Address" name="address"
                                 class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
                         </div>
                         <div class="mt-2">
-                            <select name="" id=""
+                            <select name="shop_type"
                                 class="w-full border py-2 px-4 rounded-md text-gray outline-none border-gray-500">
                                 <option value="">Shop Type</option>
-                                <option value="">A</option>
-                                <option value="">B</option>
-                                <option value="">C</option>
-                                <option value="">D</option>
-                                <option value="">E</option>
-                                <option value="">E</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
                             </select>
                         </div>
 
                         <div class="mt-1 flex gap-2">
                             <div>
-                                <input type="checkbox" id="cb1" class="mt-1" />
+                                <input type="checkbox" id="cb1" class="mt-1" name="term_condition_check" />
                             </div>
                             <p class="text-gray">
                                 Creating an account means you agree with our
@@ -83,10 +121,10 @@
                             </p>
                         </div>
 
-                        <button class="bg-primary font-semibold text-white w-full py-2 mt-4 text-center rounded-md"
-                            type="submit">
-                            Register
-                        </button>
+                        <input type="submit"
+                            class="bg-primary font-semibold text-white w-full py-2 mt-4 text-center rounded-md"
+                            value="Register" name="register">
+                        </input>
                         <div class="mt-2 flex justify-center items-center">
                             <p class="text-gray">Already have an account?</p>
                             <a class="text-green font-semibold" href="./sign-in.php">Sign in here</a>
