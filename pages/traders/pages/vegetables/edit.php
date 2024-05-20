@@ -87,7 +87,7 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
                     $cost_price = floatval($_POST['cost_price']);
                     $selling_price = floatval($_POST['selling_price']);
                     $quantity = intval($_POST['quantity']);
-                    $images = json_encode($_POST['images']);
+                    // $images = json_encode($_POST['images']);
                     $harvest_date = $_POST['harvest_date'];
                     $shelf_life = intval($_POST['shelf_life']);
                     $description = mysqli_real_escape_string($con, $_POST['description']);
@@ -129,19 +129,11 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
                     </div>
 
                     <div class="mt-3 flex gap-4">
-                        <input type="text" placeholder="Cost Price (per unit)" name="cost_price"
+                        <input type="number" placeholder="Cost Price (per unit)" name="cost_price"
                             value="<?php echo $row['cost_price']; ?>"
                             class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
-                        <input type="text" placeholder="Selling price of the vegetable (per unit)" name="selling_price"
+                        <input type="number" placeholder="Selling price of the vegetable (per unit)" name="selling_price"
                             value="<?php echo $row['selling_price']; ?>"
-                            class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
-                    </div>
-
-                    <div class="mt-3 flex gap-4">
-                        <input type="text" placeholder="Quantity/Stock Level" name="quantity"
-                            value="<?php echo $row['quantity']; ?>"
-                            class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
-                        <input type="file" name="images[]" multiple
                             class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
                     </div>
 
@@ -152,6 +144,14 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
                         <input type="number" placeholder="Shelf Life (days)" name="shelf_life"
                             value="<?php echo $row['shelf_life']; ?>"
                             class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                    </div>
+                    
+                    <div class="mt-3 flex gap-4 ">
+                        <input type="text" placeholder="Quantity/Stock Level" name="quantity"
+                            value="<?php echo $row['quantity']; ?>"
+                            class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-1/2" />
+                        <!-- <input type="file" name="images[]" multiple
+                            class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" /> -->
                     </div>
 
                     <div>
