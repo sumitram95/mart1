@@ -51,7 +51,7 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
             <!-- account information -->
             <div class="mt-6 px-4 side-bar">
                 <p class="border-b-1 ab-2 block">Account Information</p>
-                <a href="./profile/profile.php" class="text-gray mt-3 block cursor-pointer">Account</a>
+                <a href="../profile/profile.php" class="text-gray mt-3 block cursor-pointer">Account</a>
                 <a href="../auth/logout.php" class="text-gray mt-3 block cursor-pointer">Log Out</a>
             </div>
         </div>
