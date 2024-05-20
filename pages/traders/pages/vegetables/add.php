@@ -70,10 +70,12 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
                     $selling_price = floatval($_POST['selling_price']);
                     $quantity = intval($_POST['quantity']);
                     $images = json_encode($_POST['images']);
-
-                    $harvest_date = $_POST['harvest_date']; // Assuming this is in the correct format
+                    $harvest_date = $_POST['harvest_date'];
                     $shelf_life = intval($_POST['shelf_life']);
                     $description = mysqli_real_escape_string($con, $_POST['description']);
+                    $created_at = date('Y-m-d:h:i:s');
+                    $updated_at = date('Y-m-d:h:i:s');
+
 
                     if (!empty($_FILES['images']['name'][0])) {
                         $targetDir = "../../../../image/vegetables/uploads/";
@@ -93,8 +95,8 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
 
                     // insert data into db
                     $insert = "INSERT INTO `vegetables`(`vegetable_name`, `brand_or_producer`, `cost_price`, `selling_price`,
-                    `quantity`, `images`, `harvest_date`, `shelf_life`, `description`)
-                    VALUES ('$vegetable_name','$brand_or_producer',$cost_price,$selling_price,$quantity,'$images','$harvest_date',$shelf_life,'$description')";
+                    `quantity`, `images`, `harvest_date`, `shelf_life`, `description`, `created_at`, `updated_at`)
+                    VALUES ('$vegetable_name','$brand_or_producer',$cost_price,$selling_price,$quantity,'$images','$harvest_date',$shelf_life,'$description','$created_at','$updated_at')";
 
                     $query = mysqli_query($con, $insert);
                     if ($query) {

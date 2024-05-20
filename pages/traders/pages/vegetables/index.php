@@ -106,38 +106,69 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
                                         class="px-6 bg-primary text-white align-middle border border-solid border-blueGray-100 py-3 uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                                         created_at
                                     </th>
+                                    <th
+                                        class="px-6 bg-primary text-white align-middle border border-solid border-blueGray-100 py-3 uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                        action
+                                    </th>
                                 </tr>
                             </thead>
 
                             <tbody>
-                                <?php include "../../../connection.php"; ?>
-                                <tr>
-                                    <th
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 text-left text-blueGray-700 ">
-                                        1
-                                    </th>
-                                    <th
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 text-left text-blueGray-700 ">
-                                        carrot
-                                    </th>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 ">
-                                        4,569
-                                    </td>
-                                    <td
-                                        class="border-t-0 px-6 align-center border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        340
-                                    </td>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        <!-- <i class="fas fa-arrow-up text-emerald-500 mr-4"></i> -->
-                                        10
-                                    </td>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        22-09-2024
-                                    </td>
-                                </tr>
+                                <?php
+                                $query = "SELECT * FROM `vegetables`";
+                                $result = mysqli_query($con, $query);
+
+                                if ($result && mysqli_num_rows($result) > 0) {
+                                    $sn = 1;
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                        ?>
+                                        <tr>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 text-left text-blueGray-700 ">
+                                                <?php echo $sn++; ?>
+                                            </th>
+                                            <th
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 text-left text-blueGray-700 ">
+                                                <?php echo $row['vegetable_name']; ?>
+                                            </th>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 ">
+                                                <?php echo $row['cost_price']; ?>
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-center border-l-0 border-r-0 whitespace-nowrap p-4">
+                                                <?php echo $row['selling_price']; ?>
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
+                                                <!-- <i class="fas fa-arrow-up text-emerald-500 mr-4"></i> -->
+                                                <?php echo $row['quantity']; ?>
+                                            </td>
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
+                                                <?php echo date_format(date_create($row['created_at']), 'Y-M-D'); ?>
+                                            </td>
+
+                                            <td
+                                                class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
+                                                <a href="#" class="btn"><i class="fa-solid fa-eye"></i></a>
+                                                <a href="#" class="btn"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn text-red-500"><i class="fa-solid fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                        <?php
+                                    }
+                                } else {
+                                    ?>
+                                    <tr>
+                                        <td colspan="7"
+                                            class="border-t-0 text-center font-bold px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
+                                            Not found
+                                        </td>
+                                    </tr>
+                                    <?php
+                                }
+                                ?>
 
                             </tbody>
 
