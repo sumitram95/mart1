@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
+    header("Location: ../../auth/sign-in.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -106,7 +109,7 @@ session_start();
                 <a href="../dashboard.php" class="text-gray mt-3 block cursor-pointer">Dashboard</a>
                 <a href="./profile.php" class="text-gray mt-3 block cursor-pointer">account</a>
                 <a class="text-gray mt-3 block cursor-pointer active">Edit</a>
-                <a class="text-gray mt-3 block cursor-pointer">Log Out</a>
+                <a href="../../auth/logout.php" class="text-gray mt-3 block cursor-pointer">Log Out</a>
             </div>
         </div>
         <!--  -->

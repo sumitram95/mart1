@@ -58,7 +58,7 @@ session_start();
         <div class="px-4 flex justify-center items-center h-[100vh]">
             <div class="w-1/2">
                 <h1 class="font-semibold text-xl text-center">Welcome Back!</h1>
-                <!-- success message -->
+                <!-- message -->
                 <?php
 
                 include "../../message/message.php";

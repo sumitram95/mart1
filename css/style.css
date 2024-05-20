@@ -1,5 +1,4 @@
 /* ****************************************************************************** */
-
 #carousel-container {
   position: relative;
   overflow: hidden;
@@ -154,5 +153,15 @@ input[id="cb1"] {
   scrollbar-width: none;
 }
 
-/* banner */
+#scroll-hidden {
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 
+#scroll-hidden::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* banner */

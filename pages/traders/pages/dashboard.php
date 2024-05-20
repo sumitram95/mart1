@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
+    header("Location: ../auth/sign-in.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +14,11 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../../../css/style.css" />
 </head>
@@ -35,25 +43,23 @@ session_start();
             </p>
             <!-- dashboard -->
             <div class="mt-6 px-4 side-bar">
-                <p class="border-b-1 ab-2 block">dashboard</p>
-                <a class="text-gray mt-3 block cursor-pointer">Order</a>
-                <a class="text-gray mt-3 block cursor-pointer">Wishlist</a>
-                <a class="text-gray mt-3 block cursor-pointer">Log Out</a>
+                <p class="border-b-1 ab-2 block">Dashboard</p>
+                <a href="#" class="text-gray mt-3 block cursor-pointer active">Dashboard</a>
+                <a href="./vegetables/index.php" class="text-gray mt-3 block cursor-pointer">Manage Shop</a>
             </div>
             <!-- account information -->
             <div class="mt-6 px-4 side-bar">
-                <p class="border-b-1 ab-2 block">account information</p>
-                <a href="./profile/profile.php" class="text-gray mt-3 block cursor-pointer">account</a>
-                <a class="text-gray mt-3 block cursor-pointer">Wishlist</a>
-                <a class="text-gray mt-3 block cursor-pointer">Log Out</a>
+                <p class="border-b-1 ab-2 block">Account Information</p>
+                <a href="./profile/profile.php" class="text-gray mt-3 block cursor-pointer">Account</a>
+                <a href="../auth/logout.php" class="text-gray mt-3 block cursor-pointer">Log Out</a>
             </div>
         </div>
 
         <!--  -->
-        <div class="w-1/2">
+        <div class="w-3/4">
             <h1 class="font-semibold text-xl">Welcome to dashboard</h1>
-            <div class="mt-4">
-
+            <div class="mt-6">
+             
             </div>
         </div>
     </div>
