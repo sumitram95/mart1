@@ -21,6 +21,7 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../../../css/style.css" />
+    <?php include "../../connection.php"; ?>
 </head>
 
 <body>
@@ -59,7 +60,41 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
         <div class="w-3/4">
             <h1 class="font-semibold text-xl">Welcome to dashboard</h1>
             <div class="mt-6">
-             
+                <div class="flex gap-10">
+                    <?php
+                    $query = "SELECT * FROM `vegetables`";
+                    $result = mysqli_query($con, $query);
+
+                    if ($result && mysqli_num_rows($result) > 0) {
+                        $count = mysqli_num_rows($result);
+
+
+                    } else {
+                        $count = mysqli_num_rows($result) ?? 0;
+                    }
+                    ?>
+
+                    <div class="w-[200px] h-[100px] px-4 py-2 border rounded-md">
+                        <div>
+                            <p>Total Product</p>
+                            <p><?php echo $count; ?></p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="w-[200px] h-[100px] px-4 py-2 border rounded-md">
+                        <div>
+                            <p>total</p>
+                            <p>4</p>
+                        </div>
+                    </div>
+
+                    <div class="w-[200px] h-[100px] px-4 py-2 border rounded-md">
+                        <div>
+                            <p>total</p>
+                            <p>4</p>
+                        </div>
+                    </div> -->
+                </div>
             </div>
         </div>
     </div>
