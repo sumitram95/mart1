@@ -21,6 +21,7 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../../../../css/style.css" />
+    <?php include "../../../connection.php"; ?>
 </head>
 
 <body>
@@ -83,28 +84,41 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
                                 <tr>
                                     <th
                                         class="px-6 bg-primary text-white align-middle border border-solid border-blueGray-100 py-3 uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                        Page name
+                                        s.n
                                     </th>
                                     <th
                                         class="px-6 bg-primary text-white align-middle border border-solid border-blueGray-100 py-3 uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                        Visitors
+                                        name
                                     </th>
                                     <th
                                         class="px-6 bg-primary text-white align-middle border border-solid border-blueGray-100 py-3 uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                        Unique users
+                                        cost price
                                     </th>
                                     <th
                                         class="px-6 bg-primary text-white align-middle border border-solid border-blueGray-100 py-3 uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                        Bounce rate
+                                        selling price
+                                    </th>
+                                    <th
+                                        class="px-6 bg-primary text-white align-middle border border-solid border-blueGray-100 py-3 uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                        quantity
+                                    </th>
+                                    <th
+                                        class="px-6 bg-primary text-white align-middle border border-solid border-blueGray-100 py-3 uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                        created_at
                                     </th>
                                 </tr>
                             </thead>
 
                             <tbody>
+                                <?php include "../../../connection.php"; ?>
                                 <tr>
                                     <th
                                         class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 text-left text-blueGray-700 ">
-                                        /argon/
+                                        1
+                                    </th>
+                                    <th
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 text-left text-blueGray-700 ">
+                                        carrot
                                     </th>
                                     <td
                                         class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 ">
@@ -116,86 +130,15 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
                                     </td>
                                     <td
                                         class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
-                                        46,53%
+                                        <!-- <i class="fas fa-arrow-up text-emerald-500 mr-4"></i> -->
+                                        10
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
+                                        22-09-2024
                                     </td>
                                 </tr>
-                                <tr>
-                                    <th
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 text-left text-blueGray-700">
-                                        /argon/index.html
-                                    </th>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        3,985
-                                    </td>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        319
-                                    </td>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                                        46,53%
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 text-left text-blueGray-700">
-                                        /argon/charts.html
-                                    </th>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        3,513
-                                    </td>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        294
-                                    </td>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                                        36,49%
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 text-left text-blueGray-700">
-                                        /argon/tables.html
-                                    </th>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        2,050
-                                    </td>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        147
-                                    </td>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
-                                        50,87%
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4 text-left text-blueGray-700">
-                                        /argon/profile.html
-                                    </th>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        1,795
-                                    </td>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        190
-                                    </td>
-                                    <td
-                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                        <i class="fas fa-arrow-down text-red-500 mr-4"></i>
-                                        46,53%
-                                    </td>
-                                </tr>
+
                             </tbody>
 
                         </table>
