@@ -151,7 +151,7 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
 
                                             <td
                                                 class="border-t-0 px-6 align-middle border-l-0 border-r-0 whitespace-nowrap p-4">
-                                                <a href="#" class="btn"><i class="fa-solid fa-eye"></i></a>
+                                                <a href="./view.php?id=<?php echo $row['id']; ?>" class="btn"><i class="fa-solid fa-eye"></i></a>
                                                 <a href="#" class="btn"><i class="fa-solid fa-pen-to-square"></i></a>
                                                 <a href="#" class="btn text-red-500"><i class="fa-solid fa-trash"></i></a>
                                             </td>
