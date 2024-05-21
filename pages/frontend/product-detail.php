@@ -59,12 +59,12 @@
                 </button>
             </div>
             <div class="flex gap-7">
-                <a href="/pages/home.html" class="font-semibold text-lg">Home</a>
+                <a href="./home.php" class="font-semibold text-lg active">Home</a>
                 <a href="#" class="font-semibold text-lg">About</a>
-                <a href="/pages/products.html" class="font-semibold text-lg">Products</a>
+                <a href="./products.php" class="font-semibold text-lg">Products</a>
                 <a href="#" class="font-semibold text-lg">Offers</a>
-                <a href="../pages/trader-register.html" class="font-semibold text-lg">Become a Trader</a>
-                <a href="/pages/contact.html" class="font-semibold text-lg">Contact</a>
+                <a href="../traders/auth/sign-up.php" class="font-semibold text-lg">Become a Trader</a>
+                <a href="./contact.php" class="font-semibold text-lg">Contact</a>
             </div>
         </nav>
 

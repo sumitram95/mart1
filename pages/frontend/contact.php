@@ -69,29 +69,20 @@
       <!-- end product search -->
       <!-- {{-- nav-bar --}} -->
       <nav class="flex mt-10 items-center gap-7 px-4">
-        <div class="w-1/4">
-          <button
-            class="bg-primary px-4 py-3 text-white rounded-md w-full text-start"
-            id="sider-open"
-          >
-            <i class="fa-solid fa-border-all"></i> Browse all categories
-          </button>
-        </div>
-        <div class="flex gap-7">
-          <a href="/pages/home.html" class="font-semibold text-lg">Home</a>
-          <a href="" class="font-semibold text-lg">About</a>
-          <a href="/pages/products.html" class="font-semibold text-lg"
-            >Products</a
-          >
-          <a href="#" class="font-semibold text-lg">Offers</a>
-          <a href="../pages/trader-register.html" class="font-semibold text-lg"
-            >Become a Trader</a
-          >
-          <a href="/pages/contact.html" class="font-semibold text-lg active"
-            >Contact</a
-          >
-        </div>
-      </nav>
+      <div class="w-1/4">
+        <button class="bg-primary px-4 py-3 text-white rounded-md w-full text-start" id="sider-open">
+          <i class="fa-solid fa-border-all"></i> Browse all categories
+        </button>
+      </div>
+      <div class="flex gap-7">
+        <a href="./home.php" class="font-semibold text-lg active">Home</a>
+        <a href="#" class="font-semibold text-lg">About</a>
+        <a href="./products.php" class="font-semibold text-lg">Products</a>
+        <a href="#" class="font-semibold text-lg">Offers</a>
+        <a href="../traders/auth/sign-up.php" class="font-semibold text-lg">Become a Trader</a>
+        <a href="./contact.php" class="font-semibold text-lg">Contact</a>
+      </div>
+    </nav>
       <!-- end nav-bar -->
 
       <!-- content here -->
