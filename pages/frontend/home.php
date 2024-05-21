@@ -1,3 +1,7 @@
+<?php
+
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,10 +46,24 @@
           </form>
         </div>
         <div class="">
-          <a href="./sign-in.php">
-            <span class="text-green border-r-2 border-gray-400 px-2"><i class="fa-regular fa-user text-green"></i> Sign
-              In</span>
-          </a>
+          <?php
+
+          if (isset($_SESSION['full_name']) && !empty($_SESSION['full_name'])) {
+            ?>
+            <span class="text-green border-r-2 border-gray-400 px-2">
+              <?php echo $_SESSION['full_name']; ?>
+            </span>
+            <?php
+          } else {
+            ?>
+            <a href="./sign-in.php">
+              <span class="text-green border-r-2 border-gray-400 px-2"><i class="fa-regular fa-user text-green"></i> Sign
+                In</span>
+            </a>
+            <?php
+          }
+
+          ?>
           <a href="./wishlists.php"><span><i class="fa-regular fa-heart text-green"></i></span></a>
           <a href="../shopping-cart.php"><span><i class="fa-solid fa-cart-shopping text-green"></i></span></a>
         </div>
