@@ -93,7 +93,7 @@
               <img
                 src="../image/categories/1691421047.jpg"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full set-img"
               />
             </div>
             <div class="mt-8 flex gap-2">
@@ -101,28 +101,28 @@
                 <img
                   src="../image/categories/1691421065.jpg"
                   alt=""
-                  class="h-full w-full"
+                  class="h-full w-full get-img cursor-pointer"
                 />
               </div>
               <div class="w-[120px] h-[120px]">
                 <img
-                  src="../image/categories/1691421065.jpg"
+                  src="../image/categories/1692168232.jpg"
                   alt=""
-                  class="h-full w-full"
+                  class="h-full w-full get-img cursor-pointer"
                 />
               </div>
               <div class="w-[120px] h-[120px]">
                 <img
-                  src="../image/categories/1691421065.jpg"
+                  src="../image/categories/1691421090.jpg"
                   alt=""
-                  class="h-full w-full"
+                  class="h-full w-full get-img cursor-pointer"
                 />
               </div>
               <div class="w-[120px] h-[120px]">
                 <img
-                  src="../image/categories/1691421065.jpg"
+                  src="../image/categories/1691421047.jpg"
                   alt=""
-                  class="h-full w-full"
+                  class="h-full w-full get-img cursor-pointer"
                 />
               </div>
             </div>
@@ -206,6 +206,7 @@
               <div class="w-1/2">
                 <button
                   class="bg-primary py-2 font-semibold rounded-md text-white w-full"
+                  id="add-to-cart"
                 >
                   Add to cart
                 </button>
@@ -590,7 +591,7 @@
 
     <!-- model -->
     <div
-      class="w-full h-full fixed hidden px-5 py-5 bg-black bg-opacity-30 top-0 flex justify-center items-center"
+      class="w-full h-full hidden fixed px-5 py-5 bg-black bg-opacity-30 top-0 flex justify-center items-center model"
     >
       <div class="px-3 py-3 top-0 bg-white rounded-md w-3/4">
         <div class="w-full">
@@ -685,6 +686,22 @@
             $("#total").text(tax + total);
           }
         });
+
+        // model code
+        $('#add-to-cart').click(function() {
+          $('.model').toggleClass('hidden');
+        })
+
+        $('.close').click(function() {
+          $('.model').toggleClass('hidden');
+        })
+        // img set 
+        $('.get-img').click(function() {
+          var srcValue = $(this).attr('src');
+                $('.set-img').attr('src', srcValue);
+                $('.get-img').removeClass('border border-red-500');
+                $(this).addClass('border border-green-500');
+        })
       });
     </script>
   </body>
