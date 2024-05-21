@@ -27,6 +27,12 @@ session_start();
                 <h1 class="font-semibold text-xl text-center">
                     Become one of our Traders
                 </h1>
+                <?php
+
+                include "../../message/message.php";
+
+                include "../../message/error.php"
+                    ?>
                 <div class="mt-4">
                     <?php
                     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
@@ -40,6 +46,13 @@ session_start();
                         $shop_name = $_POST['shop_name'];
                         $address = $_POST['address'];
                         $shop_type = $_POST['shop_type'];
+
+                        // Server-side validation to ensure no fields are null
+                        if (empty($first_name) || empty($last_name) || empty($user_name) || empty($email) || empty($password) || empty($contact) || empty($shop_name) || empty($address) || empty($shop_type)) {
+                            $_SESSION['error'] = "All field required!";
+                            header("Location: ./sign-up.php");
+                            exit();
+                        }
 
                         // Hash the password
                         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
