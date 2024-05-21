@@ -147,7 +147,9 @@
               <div
                 class="mt-2 flex justify-between items-center border-b-1 pb-8"
               >
-                <p class="font-bold text-2xl">£1</p>
+                <p class="font-bold text-2xl">
+                  £<span id="original_price">1</span>
+                </p>
               </div>
               <div class="text-gray-400 mt-8">
                 <p>
@@ -165,31 +167,33 @@
                 >
                   <i
                     class="fa-solid fa-minus text-gray text-xs cursor-pointer"
+                    id="minus"
                   ></i>
-                  <span class="text-xl">1</span>
-                  <i class="fa-solid fa-plus text-xs cursor-pointer"></i>
+                  <span class="text-xl" id="quantity">1</span>
+                  <i
+                    class="fa-solid fa-plus text-xs cursor-pointer"
+                    id="plus"
+                  ></i>
                 </div>
               </div>
             </div>
             <div class="px-4 py-1 rounded-md border border-gray-500 mt-8">
               <div class="flex justify-between items-center">
                 <p class="font-semibold text-gray">Quantity</p>
-                <p>1</p>
+                <p id="t_qty">1</p>
               </div>
               <div class="flex justify-between items-center">
                 <p class="font-semibold text-gray">Sub-Total</p>
-                <p>$5</p>
+                <p>£<span id="t_price">1</span></p>
               </div>
               <div class="flex justify-between items-center">
                 <p class="font-semibold text-gray">Tax</p>
-                <p>$5</p>
+                <p>£<span id="tax">5</span></p>
               </div>
-
               <div class="flex justify-between items-center">
                 <p class="font-semibold text-gray">Total</p>
-                <p>$5</p>
+                <p>£<span id="total">1</span></p>
               </div>
-
             </div>
             <div class="flex gap-4 mt-8">
               <div class="w-1/2">
@@ -590,5 +594,37 @@
     ></script>
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <script src="../js/carousel.js"></script>
+    <script>
+      $(document).ready(function () {
+        var qty = parseInt($("#quantity").text());
+        var totalPriceSet = $("#t_price");
+        var totalQtySet = $("#t_qty");
+        var originalPrice = parseInt($("#original_price").text());
+        var tax = parseInt($("#tax").text());
+        $('#total').text(tax+originalPrice);
+
+        $("#plus").click(function () {
+          qty += 1;
+          $("#quantity").text(qty);
+
+          var total = originalPrice * qty;
+          totalPriceSet.text(total);
+          totalQtySet.text(qty);
+          $('#total').text(tax+total);
+        });
+
+        $("#minus").click(function () {
+          if (qty > 1) {
+            qty -= 1;
+            $("#quantity").text(qty);
+
+            var total = originalPrice * qty;
+            totalPriceSet.text(total);
+            totalQtySet.text(qty);
+            $('#total').text(tax+total);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
