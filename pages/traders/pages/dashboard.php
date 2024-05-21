@@ -45,6 +45,7 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
             <!-- dashboard -->
             <div class="mt-6 px-4 side-bar">
                 <p class="border-b-1 ab-2 block">Dashboard</p>
+                <a href="../../home.html" class="text-gray mt-3 block cursor-pointer">Home</a>
                 <a href="#" class="text-gray mt-3 block cursor-pointer active">Dashboard</a>
                 <a href="./vegetables/index.php" class="text-gray mt-3 block cursor-pointer">Manage Shop</a>
             </div>
