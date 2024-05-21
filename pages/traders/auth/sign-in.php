@@ -79,7 +79,7 @@ session_start();
                                 class="rounded-md mt-2 bg-transparent outline-none w-full" />
                         </div>
 
-                        <div class="mt-4 flex justify-between items-center gap-2">
+                        <!-- <div class="mt-4 flex justify-between items-center gap-2">
                             <div class="flex gap-4">
                                 <div>
                                     <input type="checkbox" id="cb1" class="mt-1" />
@@ -87,7 +87,7 @@ session_start();
                                 <p class="text-gray">Remember me</p>
                             </div>
                             <a class="text-green" href="#">Forgot password</a>
-                        </div>
+                        </div> -->
 
                         <button class="bg-primary font-semibold text-white w-full py-4 mt-4 text-center rounded-md"
                             type="submit" name="login">
