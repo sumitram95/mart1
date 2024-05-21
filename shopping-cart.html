@@ -14,7 +14,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Layout</title>
+    <title>Shopping Cart</title>
 
     <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
     <link rel="stylesheet" href="../css/style.css" />
@@ -88,12 +88,53 @@
       </nav>
 
       <!-- content code write here -->
-      <div class="flex ">
-        <div>
-          <p>sumit</p>
-        </div>
-        <div>
-          <p>sumti</p>
+      <div class="px-6 mt-8">
+        <div
+          class="flex justify-between items-center border rounded-md border-gray-400 px-4 py-3"
+        >
+          <!-- product -->
+          <div class="flex gap-6 items-center">
+            <div class="w-[100px] h-[100px] overflow-hidden">
+              <img src="/image/categories/1691421047.jpg" alt="" />
+            </div>
+            <div>
+              <p>product name</p>
+              <p>Quantity: <span>3</span></p>
+              <p>Price: $<span id="original_price">5</span></p>
+              <p>
+                Qty: <span id="t_qty">1</span> @ $<span id="t_price">5</span>
+              </p>
+            </div>
+          </div>
+          <!-- quantity -->
+          <div>
+            <div class="flex gap-4 bottom-0">
+              <div>
+                <span>Quntity</span>
+              </div>
+              <div
+                class="w-[160px] h-[30px] btn rounded-[15px] flex justify-between items-center px-4"
+              >
+                <div class="">
+                  <i
+                    class="fa-solid fa-minus text-gray text-xs cursor-pointer"
+                    id="minus"
+                  ></i>
+                </div>
+
+                <div>
+                  <span class="text-xl" id="quantity">1</span>
+                </div>
+
+                <div class="">
+                  <i
+                    class="fa-solid fa-plus text-xs cursor-pointer"
+                    id="plus"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- end content -->
@@ -204,5 +245,34 @@
     ></script>
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <script src="../js/carousel.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        var qty = parseInt($("#quantity").text());
+        var totalPriceSet = $("#t_price");
+        var totalQtySet = $("#t_qty");
+        var originalPrice = parseInt($("#original_price").text());
+
+        $("#plus").click(function () {
+          qty += 1;
+          $("#quantity").text(qty);
+
+          var total = originalPrice * qty;
+          totalPriceSet.text(total);
+          totalQtySet.text(qty);
+        });
+
+        $("#minus").click(function () {
+          if (qty > 1) {
+            qty -= 1;
+            $("#quantity").text(qty);
+
+            var total = originalPrice * qty;
+            totalPriceSet.text(total);
+            totalQtySet.text(qty);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
