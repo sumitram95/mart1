@@ -12,9 +12,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" type="text/css" href="../css/shoppingcart.css">
-
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Layout</title>
@@ -89,161 +86,35 @@
           >
         </div>
       </nav>
-    </div>
 
-
-    
-    <div class="cart">
-        <div class="container">
-          <div class="grid_12">
-            <h1>Your Cart</h1>
+      <!-- content -->
+      <div class=" ">
+        <div class="content">
+          <div class="img">
+            <img src="../image/categories/1691421047.jpg" alt="" />
           </div>
-          <ul class="items">
-            <li class="grid_4 item">
-              <a href="#" class="btn-remove">
-                <i class="far fa-trash-alt"></i>
-              </a>
-              <div class="preview">
-                <img src="../image/categories/1691421090.jpg" />
-              </div>
-              <div class="details" data-price="15.50">
-                <h3>
-                  Meat
-                </h3>
-                <p>Serves 4 </p>
-      
-              </div>
-              <div class="inner_container">
-      
-                <div class="col_1of2 align-center picker">
-                  <p>
-                    <a href="#" class="btn-quantity plus">
-                      <i class="fas fa-plus"></i>
-                    </a>
-                  <div class="col_1of2 quantity-text">
-                    <p><span class="current_quantity">1</span> @ £15.50</p>
-                  </div>
-                  <a href="#" class="btn-quantity minus">
-                    <i class="fas fa-minus"></i>
-                  </a>
-                  </p>
-                  <input type="hidden" class="quantity_field" name="quantity" data-price="15.50" value="1" />
-                </div>
-              </div>
-      
-            </li>
-            <li class="grid_4 item">
-              <a href="#" class="btn-remove">
-                <i class="far fa-trash-alt"></i>
-              </a>
-              <div class="preview">
-                <img src="../image/categories/1691421090.jpg" />
-              </div>
-              <div class="details" data-price="2.49">
-                <h3>
-                  Meat
-                </h3>
-                <p>Serves 4</p>
-      
-              </div>
-              <div class="inner_container">
-      
-                <div class="col_1of2 align-center picker">
-                  <p>
-                    <a href="#" class="btn-quantity plus">
-                      <i class="fas fa-plus"></i>
-                    </a>
-                  <div class="col_1of2 quantity-text">
-                    <p><span class="current_quantity">1</span> @ £2.49</p>
-                  </div>
-                  <a href="#" class="btn-quantity minus">
-                    <i class="fas fa-minus"></i>
-                  </a>
-                  </p>
-                  <input type="hidden" class="quantity_field" name="quantity" data-price="2.49" value="1" />
-                </div>
-              </div>
-      
-            </li>
-            <li class="grid_4 item">
-              <a href="#" class="btn-remove">
-                <i class="far fa-trash-alt"></i>
-              </a>
-              <div class="preview">
-                <img src="../image/categories/1691421090.jpg" />
-              </div>
-              <div class="details" data-price="8.50">
-                <h3>
-                  Meat
-                </h3>
-                <p>Serves 4</p>
-      
-              </div>
-              <div class="inner_container">
-      
-                <div class="col_1of2 align-center picker">
-                  <p>
-                    <a href="#" class="btn-quantity plus">
-                      <i class="fas fa-plus"></i>
-                    </a>
-                  <div class="col_1of2 quantity-text">
-                    <p><span class="current_quantity">1</span> @ £8.50</p>
-                  </div>
-                  <a href="#" class="btn-quantity minus">
-                    <i class="fas fa-minus"></i>
-                  </a>
-                  </p>
-                  <input type="hidden" class="quantity_field" name="quantity" data-price="8.50" value="1" />
-                </div>
-              </div>
-      
-            </li>
-          </ul>
-          <div class="grid_12 delivery-payment">
-            <div class="grid_6 delivery-address">
-              <h3>Delivery Address</h3>
-              <p>46 Vale Road</br>
-                Ramsgate</p>
-            </div>
-            <div class="grid_6 payment-details">
-              <h3>Payment Card</h3>
-              <p> **** **** **** 8678</p>
-            </div>
+          <div class="name">
+            <p>product name</p>
+            <p>quantity 4</p>
+            <p>price <span>$5</span></p>
           </div>
-          <div class="grid_12 coupon">
-            <h3>Apply Coupon</h3>
-            <input class="coupon-input" type="text">
+        </div>
+        <!-- quantity add -->
+        <div class="flex gap-4 absolute bottom-0">
+          <div>
+            <span>Quntity</span>
           </div>
-      
-          <div class="grid_12 summary">
-            <div class="inner_container">
-              <div class="summary-content">
-              <div class="col_1of2 meta-data">
-                <div class="sub-total">
-                  <em>Sub Total: </em><span class="amount"></span>
-                </div>
-                <div class="taxes">
-                  <em>Plus VAT: </em><span class="amount">@ 20%</span>
-                </div>
-      
-              </div>
-              <div class="col_1of2">
-                <div class="total">
-                  <span class="amount"></span>
-                </div>
-              </div>
-              </div>
-              <div class="btn-summary">
-      
-                <a href="#" class="btn-checkout btn-reverse">Continue Shopping</a>
-      
-                <a href="#" class="btn-checkout">Checkout</a>
-      
-              </div>
-            </div>
+          <div
+            class="w-[160px] h-[30px] btn rounded-[15px] flex justify-between items-center px-4"
+          >
+            <i class="fa-solid fa-minus text-gray text-xs cursor-pointer"></i>
+            <span class="text-xl">1</span>
+            <i class="fa-solid fa-plus text-xs cursor-pointer"></i>
           </div>
         </div>
       </div>
+      <!-- end content -->
+    </div>
 
     <!-- {{-- footer --}} -->
 
@@ -350,9 +221,5 @@
     ></script>
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <script src="../js/carousel.js"></script>
-<script src="../js/shoppingcart.js"></script>
   </body>
 </html>
-
-
-
