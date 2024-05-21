@@ -42,7 +42,7 @@
           </form>
         </div>
         <div class="">
-          <a href="../traders/auth/sign-in.php">
+          <a href="./sign-in.php">
             <span class="text-green border-r-2 border-gray-400 px-2"><i class="fa-regular fa-user text-green"></i> Sign
               In</span>
           </a>
