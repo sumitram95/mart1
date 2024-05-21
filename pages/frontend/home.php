@@ -17,7 +17,7 @@
     <title>Home</title>
 
     <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
   </head>
 
   <body class="overflow-x-hidden">
@@ -51,15 +51,15 @@
             </form>
           </div>
           <div class="">
-            <a href="./sign-in.html">
+            <a href="../sign-in.html">
               <span class="text-green border-r-2 border-gray-400 px-2"
                 ><i class="fa-regular fa-user text-green"></i> Sign In</span
               >
             </a>
-            <a href="./wishlists.html"
+            <a href="../wishlists.html"
               ><span><i class="fa-regular fa-heart text-green"></i></span
             ></a>
-            <a href="../shopping-cart.html"
+            <a href="../../shopping-cart.html"
               ><span><i class="fa-solid fa-cart-shopping text-green"></i></span
             ></a>
           </div>
@@ -104,13 +104,6 @@
         <div class="h-[450px] w-full overflow-hidden rounded-md">
           <img
             src="../image/banner/1691419892.jpg"
-            alt=""
-            class="w-full h-full"
-          />
-        </div>
-        <div class="h-[450px] w-full overflow-hidden rounded-md">
-          <img
-            src="../image/banner/1691419899.jpg"
             alt=""
             class="w-full h-full"
           />
@@ -194,313 +187,36 @@
           </h1>
           <a href="#" class="text-gray">View all</a>
         </div>
-        <div class="mt-5 flex items-center relative">
+        <div class="mt-5 flex gap-6 items-center relative">
           <div
-            id="prev"
-            class="absolute slid-btn cursor-pointer ml-[-10px] mt-[-25px] w-[30px] h-[30px] border rounded-full flex justify-center items-center bg-white"
+            class="absolute cursor-pointer ml-[-10px] mt-[-25px] w-[30px] h-[30px] border rounded-full flex justify-center items-center bg-white"
           >
             <i class="fa-solid fa-chevron-left text-green"></i>
           </div>
-          <div class="image-lists gap-5">
-            <div class="w-[220px] pb-4 border rounded-md">
-              <div class="flex justify-center">
-                <img
-                  src="../image/categories/image 4.png"
-                  alt=""
-                  class="w-[140px] h-[140px]"
-                />
-              </div>
-              <div class="px-2 mt-5">
-                <p class="text-gray text-xs">Vegetables</p>
-                <h1 class="mt-1 product-name">
-                  Vegetable Vegetable sufdsafsda
-                </h1>
-                <div class="flex gap-1 items-center mt-2">
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-gray-400 text-xs"></i>
-                  <span class="text-gray-400 text-xs">(4)</span>
-                </div>
-                <div class="mt-2">
-                  <p class="text-gray-400 text-xs">
-                    By <span class="text-green">Mr.Bond</span>
-                  </p>
-                </div>
-                <div class="mt-2 flex justify-between items-center">
-                  <p class="text-green font-bold">
-                    $1
-                    <span class="text-gray-400 line-through ml-2">$3</span>
-                  </p>
-                  <a href="../pages/product-detail.html" class="btn text-xs"
-                    >Add</a
-                  >
-                </div>
-              </div>
+          <div class="w-[220px] pb-4 border rounded-md">
+            <div class="flex justify-center">
+              <img
+                src="../image/categories/image 4.png"
+                alt=""
+                class="w-[140px] h-[140px]"
+              />
             </div>
-            <div class="w-[220px] pb-4 border rounded-md">
-              <div class="flex justify-center">
-                <img
-                  src="../image/categories/image 4.png"
-                  alt=""
-                  class="w-[140px] h-[140px]"
-                />
+            <div class="px-2 mt-5">
+              <p class="text-gray text-xs">Vegetables</p>
+              <h1 class="mt-1 product-name">Vegetable Vegetable sufdsafsda</h1>
+              <div class="flex gap-1 items-center mt-2">
+                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                <i class="fa-solid fa-star text-gray-400 text-xs"></i>
+                <span class="text-gray-400 text-xs">(4)</span>
               </div>
-              <div class="px-2 mt-5">
-                <p class="text-gray text-xs">Vegetables</p>
-                <h1 class="mt-1 product-name">
-                  Vegetable Vegetable sufdsafsda
-                </h1>
-                <div class="flex gap-1 items-center mt-2">
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-gray-400 text-xs"></i>
-                  <span class="text-gray-400 text-xs">(4)</span>
-                </div>
-                <div class="mt-2">
-                  <p class="text-gray-400 text-xs">
-                    By <span class="text-green">Mr.Bond</span>
-                  </p>
-                </div>
-                <div class="mt-2 flex justify-between items-center">
-                  <p class="text-green font-bold">
-                    $1
-                    <span class="text-gray-400 line-through ml-2">$3</span>
-                  </p>
-                  <a href="../pages/product-detail.html" class="btn text-xs"
-                    >Add</a
-                  >
-                </div>
+              <div class="mt-2">
+                <p class="text-gray-400 text-xs">
+                  By <span class="text-green">Mr.Bond</span>
+                </p>
               </div>
-<<<<<<< HEAD
-            </div>
-            <div class="w-[220px] pb-4 border rounded-md">
-              <div class="flex justify-center">
-                <img
-                  src="../image/categories/image 4.png"
-                  alt=""
-                  class="w-[140px] h-[140px]"
-                />
-              </div>
-              <div class="px-2 mt-5">
-                <p class="text-gray text-xs">Vegetables</p>
-                <h1 class="mt-1 product-name">
-                  Vegetable Vegetable sufdsafsda
-                </h1>
-                <div class="flex gap-1 items-center mt-2">
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-gray-400 text-xs"></i>
-                  <span class="text-gray-400 text-xs">(4)</span>
-                </div>
-                <div class="mt-2">
-                  <p class="text-gray-400 text-xs">
-                    By <span class="text-green">Mr.Bond</span>
-                  </p>
-                </div>
-                <div class="mt-2 flex justify-between items-center">
-                  <p class="text-green font-bold">
-                    $1
-                    <span class="text-gray-400 line-through ml-2">$3</span>
-                  </p>
-                  <a href="../pages/product-detail.html" class="btn text-xs"
-                    >Add</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="w-[220px] pb-4 border rounded-md">
-              <div class="flex justify-center">
-                <img
-                  src="../image/categories/image 4.png"
-                  alt=""
-                  class="w-[140px] h-[140px]"
-                />
-              </div>
-              <div class="px-2 mt-5">
-                <p class="text-gray text-xs">Vegetables</p>
-                <h1 class="mt-1 product-name">
-                  Vegetable Vegetable sufdsafsda
-                </h1>
-                <div class="flex gap-1 items-center mt-2">
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-gray-400 text-xs"></i>
-                  <span class="text-gray-400 text-xs">(4)</span>
-                </div>
-                <div class="mt-2">
-                  <p class="text-gray-400 text-xs">
-                    By <span class="text-green">Mr.Bond</span>
-                  </p>
-                </div>
-                <div class="mt-2 flex justify-between items-center">
-                  <p class="text-green font-bold">
-                    $1
-                    <span class="text-gray-400 line-through ml-2">$3</span>
-                  </p>
-                  <a href="../pages/product-detail.html" class="btn text-xs"
-                    >Add</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="w-[220px] pb-4 border rounded-md">
-              <div class="flex justify-center">
-                <img
-                  src="../image/categories/image 4.png"
-                  alt=""
-                  class="w-[140px] h-[140px]"
-                />
-              </div>
-              <div class="px-2 mt-5">
-                <p class="text-gray text-xs">Vegetables</p>
-                <h1 class="mt-1 product-name">
-                  Vegetable Vegetable sufdsafsda
-                </h1>
-                <div class="flex gap-1 items-center mt-2">
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-gray-400 text-xs"></i>
-                  <span class="text-gray-400 text-xs">(4)</span>
-                </div>
-                <div class="mt-2">
-                  <p class="text-gray-400 text-xs">
-                    By <span class="text-green">Mr.Bond</span>
-                  </p>
-                </div>
-                <div class="mt-2 flex justify-between items-center">
-                  <p class="text-green font-bold">
-                    $1
-                    <span class="text-gray-400 line-through ml-2">$3</span>
-                  </p>
-                  <a href="../pages/product-detail.html" class="btn text-xs"
-                    >Add</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="w-[220px] pb-4 border rounded-md">
-              <div class="flex justify-center">
-                <img
-                  src="../image/categories/image 4.png"
-                  alt=""
-                  class="w-[140px] h-[140px]"
-                />
-              </div>
-              <div class="px-2 mt-5">
-                <p class="text-gray text-xs">Vegetables</p>
-                <h1 class="mt-1 product-name">
-                  Vegetable Vegetable sufdsafsda
-                </h1>
-                <div class="flex gap-1 items-center mt-2">
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-gray-400 text-xs"></i>
-                  <span class="text-gray-400 text-xs">(4)</span>
-                </div>
-                <div class="mt-2">
-                  <p class="text-gray-400 text-xs">
-                    By <span class="text-green">Mr.Bond</span>
-                  </p>
-                </div>
-                <div class="mt-2 flex justify-between items-center">
-                  <p class="text-green font-bold">
-                    $1
-                    <span class="text-gray-400 line-through ml-2">$3</span>
-                  </p>
-                  <a href="../pages/product-detail.html" class="btn text-xs"
-                    >Add</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="w-[220px] pb-4 border rounded-md">
-              <div class="flex justify-center">
-                <img
-                  src="../image/categories/image 4.png"
-                  alt=""
-                  class="w-[140px] h-[140px]"
-                />
-              </div>
-              <div class="px-2 mt-5">
-                <p class="text-gray text-xs">Vegetables</p>
-                <h1 class="mt-1 product-name">
-                  Vegetable Vegetable sufdsafsda
-                </h1>
-                <div class="flex gap-1 items-center mt-2">
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-gray-400 text-xs"></i>
-                  <span class="text-gray-400 text-xs">(4)</span>
-                </div>
-                <div class="mt-2">
-                  <p class="text-gray-400 text-xs">
-                    By <span class="text-green">Mr.Bond</span>
-                  </p>
-                </div>
-                <div class="mt-2 flex justify-between items-center">
-                  <p class="text-green font-bold">
-                    $1
-                    <span class="text-gray-400 line-through ml-2">$3</span>
-                  </p>
-                  <a href="../pages/product-detail.html" class="btn text-xs"
-                    >Add</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="w-[220px] pb-4 border rounded-md">
-              <div class="flex justify-center">
-                <img
-                  src="../image/categories/image 4.png"
-                  alt=""
-                  class="w-[140px] h-[140px]"
-                />
-              </div>
-              <div class="px-2 mt-5">
-                <p class="text-gray text-xs">Vegetables</p>
-                <h1 class="mt-1 product-name">
-                  Vegetable Vegetable sufdsafsda
-                </h1>
-                <div class="flex gap-1 items-center mt-2">
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
-                  <i class="fa-solid fa-star text-gray-400 text-xs"></i>
-                  <span class="text-gray-400 text-xs">(4)</span>
-                </div>
-                <div class="mt-2">
-                  <p class="text-gray-400 text-xs">
-                    By <span class="text-green">Mr.Bond</span>
-                  </p>
-                </div>
-                <div class="mt-2 flex justify-between items-center">
-                  <p class="text-green font-bold">
-                    $1
-                    <span class="text-gray-400 line-through ml-2">$3</span>
-                  </p>
-                  <a href="../pages/product-detail.html" class="btn text-xs"
-                    >Add</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-=======
               <div class="mt-2 flex justify-between items-center">
                 <p class="text-green font-bold">
                   $1
@@ -653,10 +369,8 @@
             </div>
           </div>
 
->>>>>>> 4510ef87384e135e166e4b4d7f88932745afc4e0
           <div
-            id="next"
-            class="absolute slid-btn cursor-pointer mt-[-25px] w-[30px] h-[30px] border rounded-full flex justify-center items-center bg-white"
+            class="absolute cursor-pointer mt-[-25px] w-[30px] h-[30px] border rounded-full flex justify-center items-center bg-white"
             style="right: -10px"
           >
             <i class="fa-solid fa-chevron-right text-green"></i>
@@ -1327,6 +1041,5 @@
     ></script>
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <script src="../js/carousel.js"></script>
-    <script src="../js/carousel-banner.js"></script>
   </body>
 </html>
