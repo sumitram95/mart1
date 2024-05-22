@@ -84,8 +84,9 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
                         foreach ($_FILES['images']['tmp_name'] as $key => $tmpName) {
                             $fileName = basename($_FILES['images']['name'][$key]);
                             $targetFilePath = $targetDir . $fileName;
+                            $savePath = "/image/vegetables/uploads/" . $fileName;
                             if (move_uploaded_file($tmpName, $targetFilePath)) {
-                                $uploadedFiles[] = $targetFilePath;
+                                $uploadedFiles[] = $savePath;
                             }
                         }
 

@@ -105,10 +105,10 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
                     $images = json_decode($row['images'], true);
                     if (is_array($images)) {
                         foreach ($images as $image) {
-                            // echo $image;
+                       
                             ?>
                             <div class="w-[120px] h-[120px]">
-                                <img src="<?php echo $image; ?>" alt="" class="h-full w-full" />
+                                <img src="<?php echo "../../../../". $image; ?>" alt="" class="h-full w-full" />
                             </div>
                             <?php
                         }
