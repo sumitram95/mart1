@@ -59,7 +59,7 @@
                 </button>
             </div>
             <div class="flex gap-7">
-                <a href="./home.php" class="font-semibold text-lg active">Home</a>
+                <a href="./home.php" class="font-semibold text-lg">Home</a>
                 <a href="#" class="font-semibold text-lg">About</a>
                 <a href="./products.php" class="font-semibold text-lg">Products</a>
                 <a href="#" class="font-semibold text-lg">Offers</a>
@@ -73,23 +73,23 @@
             <div class="px-4 flex gap-6">
                 <div class="">
                     <div class="w-[505px] h-[405px] flex justify-center items-center">
-                        <img src="../image/categories/1691421047.jpg" alt="" class="w-full h-full set-img" />
+                        <img src="../../image/categories/1691421047.jpg" alt="" class="w-full h-full set-img" />
                     </div>
                     <div class="mt-8 flex gap-2">
                         <div class="w-[120px] h-[120px]">
-                            <img src="../image/categories/1691421065.jpg" alt=""
+                            <img src="../../image/categories/1691421065.jpg" alt=""
                                 class="h-full w-full get-img cursor-pointer" />
                         </div>
                         <div class="w-[120px] h-[120px]">
-                            <img src="../image/categories/1692168232.jpg" alt=""
+                            <img src="../../image/categories/1692168232.jpg" alt=""
                                 class="h-full w-full get-img cursor-pointer" />
                         </div>
                         <div class="w-[120px] h-[120px]">
-                            <img src="../image/categories/1691421090.jpg" alt=""
+                            <img src="../../image/categories/1691421090.jpg" alt=""
                                 class="h-full w-full get-img cursor-pointer" />
                         </div>
                         <div class="w-[120px] h-[120px]">
-                            <img src="../image/categories/1691421047.jpg" alt=""
+                            <img src="../../image/categories/1691421047.jpg" alt=""
                                 class="h-full w-full get-img cursor-pointer" />
                         </div>
                     </div>
@@ -230,7 +230,7 @@
                     </div>
                     <div class="w-[220px] pb-4 border rounded-md">
                         <div class="flex justify-center">
-                            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+                            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
                         </div>
                         <div class="px-2 mt-5">
                             <p class="text-gray text-xs">Vegetables</p>
@@ -261,7 +261,7 @@
                     </div>
                     <div class="w-[220px] pb-4 border rounded-md">
                         <div class="flex justify-center">
-                            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+                            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
                         </div>
                         <div class="px-2 mt-5">
                             <p class="text-gray text-xs">Vegetables</p>
@@ -292,7 +292,7 @@
                     </div>
                     <div class="w-[220px] pb-4 border rounded-md">
                         <div class="flex justify-center">
-                            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+                            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
                         </div>
                         <div class="px-2 mt-5">
                             <p class="text-gray text-xs">Vegetables</p>
@@ -323,7 +323,7 @@
                     </div>
                     <div class="w-[220px] pb-4 border rounded-md">
                         <div class="flex justify-center">
-                            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+                            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
                         </div>
                         <div class="px-2 mt-5">
                             <p class="text-gray text-xs">Vegetables</p>
@@ -354,7 +354,7 @@
                     </div>
                     <div class="w-[220px] pb-4 border rounded-md">
                         <div class="flex justify-center">
-                            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+                            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
                         </div>
                         <div class="px-2 mt-5">
                             <p class="text-gray text-xs">Vegetables</p>

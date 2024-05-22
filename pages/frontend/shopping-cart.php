@@ -60,7 +60,7 @@
                 </button>
             </div>
             <div class="flex gap-7">
-                <a href="./home.php" class="font-semibold text-lg active">Home</a>
+                <a href="./home.php" class="font-semibold text-lg">Home</a>
                 <a href="#" class="font-semibold text-lg">About</a>
                 <a href="./products.php" class="font-semibold text-lg">Products</a>
                 <a href="#" class="font-semibold text-lg">Offers</a>
@@ -81,7 +81,7 @@
                     <!-- product -->
                     <div class="flex gap-6 items-center">
                         <div class="w-[100px] h-[100px] overflow-hidden">
-                            <img src="/image/categories/1691421047.jpg" alt="" />
+                            <img src="../../image/categories/1691421047.jpg" alt="" />
                         </div>
                         <div class="text-gray">
                             <p>product name</p>
@@ -124,7 +124,7 @@
                     <!-- product -->
                     <div class="flex gap-6 items-center">
                         <div class="w-[100px] h-[100px] overflow-hidden">
-                            <img src="/image/categories/1691421047.jpg" alt="" />
+                            <img src="../../image/categories/1691421047.jpg" alt="" />
                         </div>
                         <div class="text-gray">
                             <p>product name</p>
@@ -167,7 +167,7 @@
                     <!-- product -->
                     <div class="flex gap-6 items-center">
                         <div class="w-[100px] h-[100px] overflow-hidden">
-                            <img src="/image/categories/1691421047.jpg" alt="" />
+                            <img src="../../image/categories/1691421047.jpg" alt="" />
                         </div>
                         <div class="text-gray">
                             <p>product name</p>

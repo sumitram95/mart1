@@ -81,7 +81,7 @@
           <!-- product -->
           <div class="flex gap-6 items-center">
             <div class="w-[100px] h-[100px] overflow-hidden">
-              <img src="/image/categories/1691421047.jpg" alt="" />
+              <img src="../../image/categories/1691421047.jpg" alt="" />
             </div>
             <div class="text-gray">
               <p>product name</p>
@@ -113,7 +113,7 @@
           <!-- product -->
           <div class="flex gap-6 items-center">
             <div class="w-[100px] h-[100px] overflow-hidden">
-              <img src="/image/categories/1691421047.jpg" alt="" />
+              <img src="../../image/categories/1691421047.jpg" alt="" />
             </div>
             <div class="text-gray">
               <p>product name</p>
@@ -145,7 +145,7 @@
           <!-- product -->
           <div class="flex gap-6 items-center">
             <div class="w-[100px] h-[100px] overflow-hidden">
-              <img src="/image/categories/1691421047.jpg" alt="" />
+              <img src="../../image/categories/1691421047.jpg" alt="" />
             </div>
             <div class="text-gray">
               <p>product name</p>
@@ -177,7 +177,7 @@
           <!-- product -->
           <div class="flex gap-6 items-center">
             <div class="w-[100px] h-[100px] overflow-hidden">
-              <img src="/image/categories/1691421047.jpg" alt="" />
+              <img src="../../image/categories/1691421047.jpg" alt="" />
             </div>
             <div class="text-gray">
               <p>product name</p>
@@ -209,7 +209,7 @@
           <!-- product -->
           <div class="flex gap-6 items-center">
             <div class="w-[100px] h-[100px] overflow-hidden">
-              <img src="/image/categories/1691421047.jpg" alt="" />
+              <img src="../../image/categories/1691421047.jpg" alt="" />
             </div>
             <div class="text-gray">
               <p>product name</p>

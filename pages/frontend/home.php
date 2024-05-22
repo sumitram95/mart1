@@ -95,7 +95,7 @@ session_start();
           <a href="#" class="font-semibold block">Watermelon</a>
         </div> -->
       <div class="h-[450px] w-full overflow-hidden rounded-md">
-        <img src="../image/banner/1691419892.jpg" alt="" class="w-full h-full" />
+        <img src="../../image/banner/1691419892.jpg" alt="" class="w-full h-full" />
       </div>
     </section>
 
@@ -107,31 +107,31 @@ session_start();
       <div class="mt-5 flex gap-6">
         <div class="w-[220px] h-[194px] bg-red-50 rounded-md flex justify-center items-center">
           <div class="">
-            <img src="../image/categories/1691421047.jpg" alt="" class="w-[101px] h-[101px]" />
+            <img src="../../image/categories/1691421047.jpg" alt="" class="w-[101px] h-[101px]" />
             <p class="text-center">Apple</p>
           </div>
         </div>
         <div class="w-[220px] h-[194px] bg-yellow-50 rounded-md flex justify-center items-center">
           <div class="">
-            <img src="../image/categories/image 4.png" alt="" class="w-[101px] h-[101px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[101px] h-[101px]" />
             <p class="text-center">Apple</p>
           </div>
         </div>
         <div class="w-[220px] h-[194px] bg-orange-50 rounded-md flex justify-center items-center">
           <div class="">
-            <img src="../image/categories/image 4.png" alt="" class="w-[101px] h-[101px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[101px] h-[101px]" />
             <p class="text-center">Apple</p>
           </div>
         </div>
         <div class="w-[220px] h-[194px] bg-blue-50 rounded-md flex justify-center items-center">
           <div class="">
-            <img src="../image/categories/image 4.png" alt="" class="w-[101px] h-[101px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[101px] h-[101px]" />
             <p class="text-center">Apple</p>
           </div>
         </div>
         <div class="w-[220px] h-[194px] bg-green-50 rounded-md flex justify-center items-center">
           <div class="">
-            <img src="../image/categories/image 4.png" alt="" class="w-[101px] h-[101px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[101px] h-[101px]" />
             <p class="text-center">Apple</p>
           </div>
         </div>
@@ -153,7 +153,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -182,7 +182,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -211,7 +211,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -240,7 +240,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -269,7 +269,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -306,7 +306,7 @@ session_start();
     </section>
     <!-- {{-- second bannger --}} -->
     <div class="h-[400px] w-full mt-6 overflow-hidden rounded-md px-4">
-      <img src="../image/banner/1691419900.jpg" alt="" class="w-full h-full rounded-md" />
+      <img src="../../image/banner/1691419900.jpg" alt="" class="w-full h-full rounded-md" />
     </div>
 
     <!-- {{-- our top products --}} -->
@@ -324,7 +324,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -353,7 +353,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -382,7 +382,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -411,7 +411,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -440,7 +440,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -491,7 +491,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -520,7 +520,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -549,7 +549,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -578,7 +578,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -607,7 +607,7 @@ session_start();
         </div>
         <div class="w-[220px] pb-4 border rounded-md">
           <div class="flex justify-center">
-            <img src="../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
+            <img src="../../image/categories/image 4.png" alt="" class="w-[140px] h-[140px]" />
           </div>
           <div class="px-2 mt-5">
             <p class="text-gray text-xs">Vegetables</p>
@@ -656,7 +656,7 @@ session_start();
           <div class="w-[400px] max-h-[330px] border rounded-md p-8 bg-green-200 item">
             <div class="flex items-center gap-4">
               <div class="w-[50px] h-[50px] overflow-hidden rounded-full">
-                <img src="../image/profile/profile.jpg" alt="" class="w-full h-full object-cover" />
+                <img src="../../image/profile/profile.jpg" alt="" class="w-full h-full object-cover" />
               </div>
               <div>
                 <p class="font-bold capitalize">Sumit Ram</p>
@@ -683,7 +683,7 @@ session_start();
           <div class="w-[400px] max-h-[330px] border rounded-md p-8 bg-green-200 item">
             <div class="flex items-center gap-4">
               <div class="w-[50px] h-[50px] overflow-hidden rounded-full">
-                <img src="../image/profile/profile.jpg" alt="" class="w-full h-full object-cover" />
+                <img src="../../image/profile/profile.jpg" alt="" class="w-full h-full object-cover" />
               </div>
               <div>
                 <p class="font-bold capitalize">Sumit Ram</p>
@@ -710,7 +710,7 @@ session_start();
           <div class="w-[400px] max-h-[330px] border rounded-md p-8 bg-green-200 item">
             <div class="flex items-center gap-4">
               <div class="w-[50px] h-[50px] overflow-hidden rounded-full">
-                <img src="../image/profile/profile.jpg" alt="" class="w-full h-full object-cover" />
+                <img src="../../image/profile/profile.jpg" alt="" class="w-full h-full object-cover" />
               </div>
               <div>
                 <p class="font-bold capitalize">Sumit Ram</p>
@@ -737,7 +737,7 @@ session_start();
           <div class="w-[400px] max-h-[330px] border rounded-md p-8 bg-green-200 item">
             <div class="flex items-center gap-4">
               <div class="w-[50px] h-[50px] overflow-hidden rounded-full">
-                <img src="../image/profile/profile.jpg" alt="" class="w-full h-full object-cover" />
+                <img src="../../image/profile/profile.jpg" alt="" class="w-full h-full object-cover" />
               </div>
               <div>
                 <p class="font-bold capitalize">Sumit Ram</p>
