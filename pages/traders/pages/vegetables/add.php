@@ -112,36 +112,62 @@ if (!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
 
                 <form action="" method="post" class="px-2" enctype="multipart/form-data">
                     <div class="mt-3 flex gap-4">
-                        <input type="text" placeholder="Vegetable Name" name="vegetable_name"
-                            class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
-                        <input type="text" placeholder="Brand/Producer" name="brand_or_producer"
-                            class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        <div class="w-full">
+                            <p>Name <span class="text-red-500">*</span></p>
+                            <input type="text" placeholder="Carrot" name="vegetable_name"
+                                class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        </div>
+                        <div class="w-full">
+                            <p>Brand/Producer Name <span class="text-red-500">*</span></p>
+                            <input type="text" placeholder="Brand/Producer" name="brand_or_producer"
+                                class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        </div>
                     </div>
 
                     <div class="mt-3 flex gap-4">
-                        <input type="text" placeholder="Cost Price (per unit)" name="cost_price"
-                            class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
-                        <input type="text" placeholder="Selling price of the vegetable (per unit)" name="selling_price"
-                            class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        <div class="w-full">
+                            <p>Cost Price (per unit) <span class="text-red-500">*</span></p>
+                            <input type="number" placeholder="47" name="cost_price"
+                                class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        </div>
+                        <div class="w-full">
+                            <p>Selling price (per unit) <span class="text-red-500">*</span></p>
+                            <input type="number" placeholder="60" name="selling_price"
+                                class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        </div>
                     </div>
 
                     <div class="mt-3 flex gap-4">
-                        <input type="text" placeholder="Quantity/Stock Level" name="quantity"
-                            class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
-                        <input type="file" name="images[]" multiple
-                            class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        <div class="w-full">
+                            <p>Quantity <span class="text-red-500">*</span></p>
+                            <input type="text" placeholder="Quantity/Stock Level" name="quantity"
+                                class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        </div>
+                        <div class="w-full">
+                            <p>Image <span class="text-red-500">*</span></p>
+                            <input type="file" name="images[]" multiple
+                                class="px-4 py-1 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        </div>
                     </div>
 
                     <div class="mt-3 flex gap-4">
-                        <input type="date" placeholder="Harvest Date" name="harvest_date"
-                            class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
-                        <input type="number" placeholder="Shelf Life (days)" name="shelf_life"
-                            class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        <div class="w-full">
+                            <p>Harvest Date <span class="text-red-500">*</span></p>
+                            <input type="date" placeholder="Harvest Date" name="harvest_date"
+                                class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        </div>
+                        <div class="w-full">
+                            <p>Shelf Life (days) <span class="text-red-500">*</span></p>
+                            <input type="number" placeholder="45" name="shelf_life"
+                                class="px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full" />
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="mt-3">
+                        <p>Description <span class="text-red-500">*</span></p>
                         <textarea rows="6" name="description" id=""
-                            class="w-full px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none w-full"></textarea>
+                            class="w-full px-4 py-2 rounded-md mt-2 bg-transparent border border-gray-500 outline-none"
+                            placeholder="Description"></textarea>
                     </div>
 
                     <input type="submit"
